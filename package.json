@@ -1,0 +1,24 @@
+{
+  "name": "vigilant-lamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zalgoforge/vigilant-lamp",
+  "author": "Krzysztof Kabat <odrinwhite@gmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.1.0",
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --watch --sourcemap  --target=chrome96 --outfile=dist/out.js && cp ./assets/* dist"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.35",
+    "@types/react-dom": "^17.0.11",
+    "esbuild": "^0.13.14",
+    "express": "^4.17.1",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
