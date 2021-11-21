@@ -7,7 +7,7 @@
   "license": "MIT",
   "packageManager": "yarn@3.1.0",
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --watch --sourcemap  --target=chrome96 --outfile=dist/out.js && cp ./assets/* dist"
+    "build": "cp -a ./assets/. ./dist/ && esbuild src/index.tsx --bundle --watch --sourcemap  --target=chrome96 --outfile=dist/out.js"
   },
   "devDependencies": {
     "@types/react": "^17.0.35",
@@ -19,9 +19,12 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "@react-three/fiber": "^7.0.19",
+    "@react-spring/three": "^9.3.0",
+    "@react-three/drei": "^7.22.4",
+    "@react-three/fiber": "^6.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "three": "^0.134.0"
+    "three": "^0.134.0",
+    "use-key-state": "^0.1.9"
   }
 }
