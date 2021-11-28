@@ -95,6 +95,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-three/cannon@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@react-three/cannon@npm:4.1.0"
+  dependencies:
+    cannon-es: ^0.18.0
+    cannon-es-debugger: ^0.1.4
+  peerDependencies:
+    react: ">=17.0"
+    react-dom: ">=17.0"
+  checksum: 2bd51be6201b117f221ca4cc372ec024197e439d54b612a231c2a633b0568c7fcdb8ff63a3234748d70a980eb3631b29831c01a575300ac80962de29094b25b8
+  languageName: node
+  linkType: hard
+
 "@react-three/drei@npm:^7.22.4":
   version: 7.22.4
   resolution: "@react-three/drei@npm:7.22.4"
@@ -253,6 +266,27 @@ __metadata:
   version: 3.1.0
   resolution: "bytes@npm:3.1.0"
   checksum: 7c3b21c5d9d44ed455460d5d36a31abc6fa2ce3807964ba60a4b03fd44454c8cf07bb0585af83bfde1c5cc2ea4bbe5897bc3d18cd15e0acf25a3615a35aba2df
+  languageName: node
+  linkType: hard
+
+"cannon-es-debugger@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "cannon-es-debugger@npm:0.1.4"
+  peerDependencies:
+    cannon-es: 0.x.x
+    three: 0.x.x
+    typescript: ">=3.8"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: ee41c3725af4dca35e3a13deafef519740e8fbe2a90d102fdf1f40dcb9cca5097570dbb100cf43d93760abc8e53f6e819f0732f0d293b17fb44c00b342cbd8e9
+  languageName: node
+  linkType: hard
+
+"cannon-es@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "cannon-es@npm:0.18.0"
+  checksum: 87ee3c44579764b25defdee58a97c29df50ee0bfc380130a078c5fa625c4c9e745f042fef1ba611fe49f913d85351ec865b7ec8b83d598b9e11a10fd07a85d50
   languageName: node
   linkType: hard
 
@@ -1277,6 +1311,7 @@ __metadata:
   resolution: "vigilant-lamp@workspace:."
   dependencies:
     "@react-spring/three": ^9.3.0
+    "@react-three/cannon": ^4.1.0
     "@react-three/drei": ^7.22.4
     "@react-three/fiber": ^6.2.3
     "@types/react": ^17.0.35
